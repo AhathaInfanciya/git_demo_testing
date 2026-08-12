@@ -21,15 +21,15 @@ def main():
         try:
             a = float(input("Enter first number: "))
             break
-        except Exception:
-            print("Invalid input.Enter a valid number.")
+        except ValueError:
+            print("Invalid input. Enter a valid number.")
 
     while True:
         try:
             b = float(input("Enter second number: "))
             break
-        except Exception:
-            print("Invalid input.Enter a valid number.")
+        except ValueError:
+            print("Invalid input. Enter a valid number.")
 
     while True:
         c = input("Enter operation (+, -, *, /): ")
@@ -43,7 +43,7 @@ def main():
         result = subtract_numbers(a, b)
     elif c == "*":
         result = multiply_numbers(a, b)
-    elif c == "/":
+    else:
         result = divide_numbers(a, b)
 
     if isinstance(result, str):
