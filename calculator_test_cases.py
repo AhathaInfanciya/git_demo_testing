@@ -1,12 +1,12 @@
-import pytest
-
 from unittest.mock import patch
+
+import pytest
 
 from calculator import (
     add_numbers,
-    subtract_numbers,
-    multiply_numbers,
     divide_numbers,
+    multiply_numbers,
+    subtract_numbers,
 )
 
 # ─── add_numbers ───────────────────────────────────────────
